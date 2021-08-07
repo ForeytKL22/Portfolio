@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #a5b4c9;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER STYLING START */
+
+header {
+    background-color: #7f93b0;
+    height: 150px;
+    border: 2px solid black;
+}
+
+header h1 {
+    display: inline;
+    font-size: 50px;
+    background-color: green;
+    margin-top: 35px;
+}
+
+header nav  {
+    float: right;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+nav a {
+    margin: 0px 45px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+nav a:hover {
+    color: #155f8f;
+    text-shadow: 3px 3px gray;
+}
+
+/* HEADER STYLING END */
+
+/* PORTFOLIO TITLE STYLES START */
+
+img {
+    width: 100%;
+    height: 400px;
+    opacity: 0.25;
+}
+
+.nature-picture {
+    position: relative;
+}
+
+.title {
+    position: absolute;
+}
+
+/* PORTFOLIO TITLE STYLES END */
+
+/* ABOUT ME STYLES START */
+
+.container-about h2 {
+    width: 20%;
+    display: inline-block;
+    height: 300px;
+    background-color: blue;
+    text-align: right;
+}
+
+.container-about p {
+    width: 50%;
+    display: inline;
+    float: right;
+    text-align: left;
+}
+
+
+
+/* ABOUT ME STYLES END */
