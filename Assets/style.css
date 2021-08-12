@@ -3,23 +3,24 @@
 }
 
 body {
-    background-color: #a5b4c9;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Courier New', Courier, monospace;
 }
 
 /* HEADER STYLING START */
 
 header {
-    background-color: #7f93b0;
+    background-color: #1d2742;
     height: 150px;
     border: 2px solid black;
 }
 
 header h1 {
-    display: inline;
+    display: inline-block;
     font-size: 50px;
-    background-color: green;
-    margin-top: 35px;
+    background-color: #357d8a;
+    margin-top: 45px;
+    margin-left: 70px;
+    color: white;
 }
 
 header nav  {
@@ -27,20 +28,23 @@ header nav  {
 }
 
 header nav ul li {
-    display: inline;
+    display: inline-block;
+    margin-top: 55px;
 }
 
 nav a {
-    margin: 0px 45px;
+    margin: 0px 75px;
     text-decoration: none;
-    color: black;
+    color: #357d8a;
     font-weight: bolder;
-    font-size: 23px;
+    font-size: 25px;
+    border-bottom: 3px solid #357d8a;
+    padding-bottom: 3px;
 }
 
 nav a:hover {
     color: #155f8f;
-    text-shadow: 3px 3px gray;
+    text-shadow: 2px 2px #326594;
 }
 
 /* HEADER STYLING END */
@@ -49,7 +53,7 @@ nav a:hover {
 
 img {
     width: 100%;
-    height: 400px;
+    height: 375px;
     opacity: 0.25;
 }
 
@@ -59,27 +63,47 @@ img {
 
 .title {
     position: absolute;
+    right: 15px;
+    bottom: 20px;
+}
+
+.title h2 {
+    font-size: 50px;
 }
 
 /* PORTFOLIO TITLE STYLES END */
 
 /* ABOUT ME STYLES START */
 
-.container-about h2 {
-    width: 20%;
+.container-about {
+    padding: 50px;
+}
+
+.about-me {
+    /* width: 30%; */
     display: inline-block;
+    vertical-align: top;
     height: 300px;
-    background-color: blue;
     text-align: right;
+    border-right: solid 3px rgb(19, 207, 19);
+    font-size: 70px;
 }
 
-.container-about p {
-    width: 50%;
-    display: inline;
-    float: right;
-    text-align: left;
+.about-text {
+    width: 70%;
+    display: inline-block;
 }
-
-
 
 /* ABOUT ME STYLES END */
+
+/* WORK STYLES START */
+
+.work h2 {
+    width: 30%;
+    border-right: solid 3px green;
+    font-size: 70px;
+    display: inline-block;
+    height: 700px;
+}
+
+/* WORK STYLES END */
