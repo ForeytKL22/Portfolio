@@ -91,7 +91,6 @@ nav ul li a {
     padding-right: 15px;
     font-size: 40px;
     color: #200a4d;
-    /* width: 30%; */
 }
 
 .aboutme-text {
@@ -103,6 +102,12 @@ nav ul li a {
 /* ABOUT ME STYLES END */
 
 /* WORK STYLES START */
+
+.portfolio-sites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .work-title {
     display: inline-block;
@@ -118,20 +123,33 @@ nav ul li a {
 
 .portfolio-sites {
     display: inline-block;
-    position: absolute;
-    
+    position: absolute;   
 }
 
-.surf-report h4 {
-    color: yellowgreen;
-}
-
-.surf-report {
+.run-buddy {
     width: 850px;
     height: 400px;
-    background-image: url("https://i.imgur.com/DGbhxwz.png");
+    background-image: url("https://i.imgur.com/oczy40F.png");
     border: 10px solid #200a4d;
     margin-left: 45px;
+    background-size: 853px 402px;
+}
+
+.run-buddy:hover {
+    opacity: 70%;
+}
+
+.main-project {
+    background-color: #200a4d;
+    color: white;
+    width: 17%;
+    margin-top: 300px;
+}
+
+.main-project-sub {
+    background-color: #200a4d;
+    color: white;
+    width: 17%;
 }
 
 .table-sites {
@@ -141,13 +159,25 @@ nav ul li a {
 
 .table-sites-data {
     border: 10px solid #200a4d;
-    /* background-image: url("https://i.imgur.com/DGbhxwz.png"); */
     width: 403px;
     height: 160px; 
 }
 
-.run-buddy {
-    background-image: url("https://i.imgur.com/oczy40F.png");
+.pastel-puzzles {
+    background-image: url("https://i.imgur.com/DGbhxwz.png");
+}
+
+.calculator {
+    background-image: url("https://i.imgur.com/DGbhxwz.png");
+}
+
+.horiseon {
+    background-image: url("https://i.imgur.com/Y0ZRXYh.png");
+    background-size: 405px 163px;
+}
+
+.surf-report {
+    background-image: url("https://i.imgur.com/DGbhxwz.png");
 }
 
 .table-sites-data:hover {
@@ -199,7 +229,7 @@ nav ul li a {
 
 .contact ul li {
     display: inline;
-    padding: 50px;
+    margin: 50px;
     font-size: 22px;
 }
 
@@ -207,9 +237,27 @@ nav ul li a {
     background-color: #b291f2;
     border-radius: 10px;
     padding: 5px 10px;
+    margin: 40px;
 }
 
 .contact ul li a {
     text-decoration: none;
     color: black;
 }
+
+/* CONTACT STYLES END */
+
+/* @media screen and (max-width: 980px) {
+    .container-about h3 {
+        display: block;
+        text-align: center;
+        text-decoration: underline;
+        width: 100%;
+        border-right: none;
+    }
+
+
+
+
+} */
+
