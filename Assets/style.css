@@ -1,109 +1,215 @@
+
 * {
     margin: 0;
 }
 
 body {
-    font-family:'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER STYLING START */
+/* HEADER STYLES START */
 
 header {
-    background-color: #1d2742;
-    height: 150px;
-    border: 2px solid black;
+    background-color: #200a4d;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
 }
 
 header h1 {
-    display: inline-block;
-    font-size: 50px;
-    background-color: #357d8a;
-    margin-top: 45px;
-    margin-left: 70px;
     color: white;
+    display: inline;
+    background-color: #b291f2;
+    padding: 5px 8px 5px 35px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
-header nav  {
+header .name {
+    margin-top: 20px;
+}
+
+nav {
+    list-style: none;
     float: right;
+    display: inline;
+    margin-top: 30px;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin-top: 55px;
-}
-
-nav a {
-    margin: 0px 75px;
-    text-decoration: none;
-    color: #357d8a;
-    font-weight: bolder;
-    font-size: 25px;
-    border-bottom: 3px solid #357d8a;
-    padding-bottom: 3px;
+nav ul li {
+    display: inline;
+    margin: 0 40px;
+    background-color: #b291f2;
+    padding: 8px;
+    border-radius: 8px;
 }
 
 nav a:hover {
-    color: #155f8f;
-    text-shadow: 2px 2px #326594;
+    font-weight: bolder;
+    color: #200a4d;
 }
 
-/* HEADER STYLING END */
-
-/* PORTFOLIO TITLE STYLES START */
-
-img {
-    width: 100%;
-    height: 375px;
-    opacity: 0.25;
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
-.nature-picture {
-    position: relative;
+/* HEADER STYLES END */
+
+/* COVER PHOTO STYLES START */
+
+.cover-photo {
+    height: 240px;
+    position: relative; 
+    background-image: url("https://i.imgur.com/Qplehio.png");
 }
 
-.title {
+.cover-photo h2 {
     position: absolute;
-    right: 15px;
-    bottom: 20px;
-}
-
-.title h2 {
+    bottom: 30px;
+    right: 40px;
     font-size: 50px;
+    color: #200a4d;
+    text-decoration: underline 5px solid #200a4d;
 }
 
-/* PORTFOLIO TITLE STYLES END */
+/* COVER PHOTO STYLES END */
 
 /* ABOUT ME STYLES START */
 
 .container-about {
-    padding: 50px;
+    padding: 40px;
 }
 
-.about-me {
-    /* width: 30%; */
+.aboutme-title {
     display: inline-block;
-    vertical-align: top;
     height: 300px;
     text-align: right;
-    border-right: solid 3px rgb(19, 207, 19);
-    font-size: 70px;
+    vertical-align: top;
+    border-right: solid 7px #b291f2;
+    padding-right: 15px;
+    font-size: 40px;
+    color: #200a4d;
+    /* width: 30%; */
 }
 
-.about-text {
-    width: 70%;
+.aboutme-text {
     display: inline-block;
+    width: 70%;
+    padding-left: 30px;
 }
 
 /* ABOUT ME STYLES END */
 
 /* WORK STYLES START */
 
-.work h2 {
-    width: 30%;
-    border-right: solid 3px green;
-    font-size: 70px;
+.work-title {
     display: inline-block;
-    height: 700px;
+    height: 860px;
+    text-align: right;
+    vertical-align: top;
+    padding-right: 15px;
+    font-size: 40px;
+    color: #200a4d;
+    width: 252px;
+    border-right: solid 7px #b291f2;
 }
 
-/* WORK STYLES END */
+.portfolio-sites {
+    display: inline-block;
+    position: absolute;
+    
+}
+
+.surf-report h4 {
+    color: yellowgreen;
+}
+
+.surf-report {
+    width: 850px;
+    height: 400px;
+    background-image: url("https://i.imgur.com/DGbhxwz.png");
+    border: 10px solid #200a4d;
+    margin-left: 45px;
+}
+
+.table-sites {
+    border-spacing: 20px;
+    margin-left: 25px;
+}
+
+.table-sites-data {
+    border: 10px solid #200a4d;
+    /* background-image: url("https://i.imgur.com/DGbhxwz.png"); */
+    width: 403px;
+    height: 160px; 
+}
+
+.run-buddy {
+    background-image: url("https://i.imgur.com/oczy40F.png");
+}
+
+.table-sites-data:hover {
+    opacity: 70%;
+}
+
+.projects-title {
+    font-size: 22px;
+}
+
+.projects {
+    background-color: #200a4d;
+    color: white;
+    width: 17%;
+    position: absolute;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 12px;
+}
+
+/*  WORK STYLES END */
+
+/* CONTACT STYLES START */
+
+.contact {
+    padding: 40px;
+}
+
+.contact-title {
+    width: 212px;
+    height: 300px;
+    text-align: right;
+    vertical-align: top;
+    padding-right: 15px;
+    font-size: 40px;
+    color: #200a4d;
+    border-right: solid 7px #b291f2;
+    display: inline-block;
+}
+
+.contact ul {
+    display: inline-block;
+    list-style: none;
+    margin-top: 100px;
+}
+
+.contact ul li {
+    display: inline;
+    padding: 50px;
+    font-size: 22px;
+}
+
+.contact ul li:hover {
+    background-color: #b291f2;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: black;
+}
