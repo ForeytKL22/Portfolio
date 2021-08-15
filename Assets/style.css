@@ -100,6 +100,14 @@ nav ul li a {
     padding-left: 30px;
 }
 
+.aboutme-text img {
+    height: 240px;
+    width: 180px;
+    position: inline-block;
+    float: left;
+    margin: 22px 15px 15px 0; 
+}
+
 /* ABOUT ME STYLES END */
 
 /* WORK STYLES START */
@@ -124,12 +132,12 @@ nav ul li a {
 
 .portfolio-sites {
     display: inline-block;
-    position: absolute;   
+    /* position: absolute;    */
 }
 
 .run-buddy {
     max-width: 850px;
-    height: 400px;
+    height: 345px;
     background-image: url("https://i.imgur.com/oczy40F.png");
     border: 10px solid #200a4d;
     margin-left: 45px;
@@ -145,7 +153,7 @@ nav ul li a {
     background-color: #200a4d;
     color: white;
     width: 17%;
-    margin-top: 300px;
+    margin-top: 260px;
 }
 
 .main-project-sub {
@@ -249,28 +257,36 @@ nav ul li a {
 
 /* CONTACT STYLES END */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1205px) {
     .aboutme-title {
         display: flex;
-        height: 100px;
+        height: 70px;
         border-right: none;
         text-align: center;
-        text-decoration: underline;
         justify-content: space-around;
+        border-bottom: 7px solid #b291f2;
+        padding: 0%;
     }
 
     .aboutme-text p {
         text-align: center;
         padding-left: 25%;
+        padding-top: 5%;
     }
 
     .work-title {
         margin: auto;
         display: flex;
-        height: 100px;
+        height: 70px;
         border-right: none;
         text-align: center;
         justify-content: space-around;
+        border-bottom: 7px solid #b291f2;
+        padding: 0 20%;
+        margin-bottom: 0;
+    }
+    .run-buddy {
+        margin-top: 50px;
     }
 
     .portfolio-sites {
@@ -281,15 +297,27 @@ nav ul li a {
         display: flex;
         flex-wrap: wrap;
         border-right: none;
+        text-align: center;
+        height: 50px;
+        margin: auto;
+        border-bottom: 7px solid #b291f2;
+        padding: 2% 30%;
     }
+
+    .aboutme-text img {
+        float: none;
+        margin: 4% 52%;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
     nav ul li {
-        display: flex;
+        display: inline-flex;
         flex-wrap: wrap;
         justify-content: space-around;
         background-color: none;
+        margin: 0;
     }
 
     .contact-title {
@@ -301,8 +329,16 @@ nav ul li a {
         flex-wrap: wrap;
         justify-content: space-around;
         flex-basis: auto;
-        
+        text-align: center;
     }
 
+    .contact ul {
+        margin: 2% 28%;
+        padding: 0;
+    }
+
+    .aboutme-text img {
+        margin: 4% 45%;
+    }
 }
 
