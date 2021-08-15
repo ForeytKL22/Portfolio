@@ -277,7 +277,7 @@ nav ul li a {
         margin-left: none;
     }
 
-    .contact {
+    .contact-title {
         display: flex;
         flex-wrap: wrap;
         border-right: none;
@@ -292,10 +292,16 @@ nav ul li a {
         background-color: none;
     }
 
-    .contact-title ul li {
+    .contact-title {
+        text-align: center;
+    }
+
+    .contact ul li {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        flex-basis: auto;
+        
     }
 
 }
