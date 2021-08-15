@@ -134,6 +134,7 @@ nav ul li a {
     border: 10px solid #200a4d;
     margin-left: 45px;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .run-buddy:hover {
@@ -269,6 +270,31 @@ nav ul li a {
         height: 100px;
         border-right: none;
         text-align: center;
+        justify-content: space-around;
+    }
+
+    .portfolio-sites {
+        margin-left: none;
+    }
+
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: none;
+    }
+
+    .contact-title ul li {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
 
