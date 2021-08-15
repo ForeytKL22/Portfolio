@@ -11,9 +11,10 @@ body {
 
 header {
     background-color: #200a4d;
-    overflow: auto;
+    /* overflow: auto; */
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 80px;
 }
 
@@ -24,6 +25,7 @@ header h1 {
     padding: 5px 8px 5px 35px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+
 }
 
 header .name {
@@ -46,7 +48,6 @@ nav ul li {
 }
 
 nav a:hover {
-    font-weight: bolder;
     color: #200a4d;
 }
 
@@ -127,12 +128,12 @@ nav ul li a {
 }
 
 .run-buddy {
-    width: 850px;
+    max-width: 850px;
     height: 400px;
     background-image: url("https://i.imgur.com/oczy40F.png");
     border: 10px solid #200a4d;
     margin-left: 45px;
-    background-size: 853px 402px;
+    background-size: contain;
 }
 
 .run-buddy:hover {
@@ -247,17 +248,29 @@ nav ul li a {
 
 /* CONTACT STYLES END */
 
-/* @media screen and (max-width: 980px) {
-    .container-about h3 {
-        display: block;
+@media screen and (max-width: 980px) {
+    .aboutme-title {
+        display: flex;
+        height: 100px;
+        border-right: none;
         text-align: center;
         text-decoration: underline;
-        width: 100%;
-        border-right: none;
+        justify-content: space-around;
     }
 
+    .aboutme-text p {
+        text-align: center;
+        padding-left: 25%;
+    }
 
+    .work-title {
+        margin: auto;
+        display: flex;
+        height: 100px;
+        border-right: none;
+        text-align: center;
+        justify-content: space-around;
+    }
 
-
-} */
+}
 
