@@ -173,12 +173,14 @@ nav ul li a {
     height: 160px; 
 }
 
-.pastel-puzzles {
-    background-image: url("https://i.imgur.com/DGbhxwz.png");
+.nps-camping {
+    background-image: url("https://i.imgur.com/mnZTqc2.png");
+    background-size: 405px 163px;
 }
 
-.calculator {
-    background-image: url("https://i.imgur.com/DGbhxwz.png");
+.game-forum {
+    background-image: url("https://i.imgur.com/jtLCD0i.png");
+    background-size: 405px 163px;
 }
 
 .horiseon {
